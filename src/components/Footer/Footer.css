@@ -1,0 +1,18 @@
+footer {
+  background: var(--gradient);
+  color: white;
+  text-align: center;
+  padding: 1%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fija el footer en la ventana del navegador */
+  width: 100%;
+  bottom: 0; /* Lo coloca en la parte inferior */
+  left: 0; /* Lo alinea a la izquierda */
+  z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  top: 0vh;
+}

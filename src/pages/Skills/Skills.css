@@ -1,0 +1,70 @@
+#skills {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  height: auto; /* Permite que el contenedor crezca según el contenido */
+  overflow-y: auto; /* Habilita el scroll si es necesario */
+  overflow-x: hidden; /* Evita desbordamientos horizontales */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+/* Estilos para cada categoría de habilidades */
+.skill-category {
+  margin-bottom: 2rem;
+  flex: 1; /* Permite que cada sección crezca según el contenido */
+  min-height: 0;
+}
+
+.skill-category h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem; /* Reduce el espacio inferior */
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  position: relative;
+  top: -80px; /* Sube el título */
+}
+
+.skill-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.01rem;
+  justify-content: center;
+  position: relative;
+  top: -110px; /* Sube la lista de habilidades */
+}
+
+.skill-category ul li {
+  background: var(--gradient);
+  color: white;
+  padding: 0.6rem 0.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  min-width: 400px; /* Se amplía para evitar que sean demasiado pequeños */
+  max-width: 800px; /* Controla el tamaño máximo */
+  flex: 1 1 calc(33.333% - 1rem); /* Asegura que ocupen bien el espacio */
+}
+
+.skill-category ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,68 @@
+.social-skills-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-skills-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.social-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.social-skill-item {
+  background: var(--gradient);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 50%;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.social-skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.skill-description {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+  top: -10px;
+  left: 0vh;
+}

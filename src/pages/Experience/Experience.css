@@ -1,0 +1,138 @@
+#experience {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient);
+  left: 50%;
+  margin-left: -2px;
+}
+
+.job {
+  background: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  width: 45%;
+}
+
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.job h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.job p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.job ul {
+  margin-left: 1.5rem;
+}
+
+.job ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.job ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.job ul li:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.job ul li:hover::before {
+  background: var(--secondary-color);
+  transition: background 0.3s ease;
+}
+
+.job.left {
+  left: 0;
+}
+
+.job.right {
+  left: 55%;
+}
+
+.job::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: var(--background-color);
+  border: 4px solid var(--primary-color);
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.job.right::after {
+  left: -10px;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .job {
+    width: 100%;
+    left: 0 !important;
+  }
+
+  .job::after {
+    left: 10px !important;
+  }
+}

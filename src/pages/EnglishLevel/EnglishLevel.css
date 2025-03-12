@@ -1,0 +1,71 @@
+#english-level {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#english-level h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+#english-level p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar-container {
+
+  background: #ecf0f1;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin: 1.5rem auto;
+  width: 90%;
+  translate: 0px -30px;
+}
+
+.progress-bar {
+  background: var(--gradient);
+  height: 100%;
+  width: 70%; 
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.level-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-top: 1rem;
+}
+
+.level-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  
+}
+
+.level-detail {
+  text-align: center;
+}
+
+.level-detail h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  translate: 0px 0.5rem;
+}
+
+.level-detail p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  left: 0vh;
+  top: -30vh;
+}
