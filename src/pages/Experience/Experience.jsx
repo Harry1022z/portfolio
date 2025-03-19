@@ -8,8 +8,8 @@ const Experience = () => {
     {
       id: 1,
       title: "Desarrollador Frontend",
-      company: "Empresa XYZ",
-      period: "Enero 2022 - Presente",
+      company: "Sena",
+      period: "Enero 2023 - 2026",
       responsibilities: [
         "Desarrollo de interfaces de usuario con React.",
         "Colaboración en equipo para la implementación de nuevas funcionalidades.",
@@ -19,8 +19,8 @@ const Experience = () => {
     {
       id: 2,
       title: "Practicante de Desarrollo",
-      company: "Empresa ABC",
-      period: "Junio 2021 - Diciembre 2021",
+      company: "Corporación Universitaria Empresarial Alexander von Humboldt",
+      period: "Junio 2025 - Enero 2026",
       responsibilities: [
         "Apoyo en el desarrollo de aplicaciones web.",
         "Participación en reuniones de planificación y revisión de código.",
@@ -34,20 +34,32 @@ const Experience = () => {
       <div id="experience">
         <div className="timeline">
           {jobs.map((job, index) => (
-            <div key={job.id} className={`job ${index % 2 === 0 ? "left" : "right"}`}>
-              <h3>
-                <FaCode /> {job.title}
-              </h3>
-              <p>
-                <FaUsers /> {job.company} | <FaCalendarAlt /> {job.period}
-              </p>
-              <ul>
-                {job.responsibilities.map((responsibility, i) => (
-                  <li key={i}>
-                    <FaArrowRight /> {responsibility}
-                  </li>
-                ))}
-              </ul>
+            <div key={job.id} className={`job-container ${index % 2 === 0 ? "left" : "right"}`}>
+              <div className="job">
+                {/* Título del trabajo */}
+                <h3>
+                  <FaCode /> {job.title}
+                </h3>
+
+                {/* Empresa y período */}
+                <div className="job-info">
+                  <span>
+                    <FaUsers /> {job.company}
+                  </span>
+                  <span>
+                    <FaCalendarAlt /> {job.period}
+                  </span>
+                </div>
+
+                {/* Responsabilidades */}
+                <ul className="responsibilities">
+                  {job.responsibilities.map((responsibility, i) => (
+                    <li key={i}>
+                      <FaArrowRight /> {responsibility}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

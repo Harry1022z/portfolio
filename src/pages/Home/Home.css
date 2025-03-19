@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -38,15 +39,13 @@ html, body {
 }
 
 p {
-  max-width: 80vw;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: black !important;
   margin: 1rem auto;
   animation: fadeIn 1s ease-out;
   position: relative;
-  left: 10vw;
-  top: -39vh; /* Se eliminó -35vh para evitar desbordamiento */
+  translate: 150px -300px;
 }
 
 .profile-photo:hover {
@@ -66,4 +65,181 @@ p {
   max-width: 600px;
   margin: 0 auto;
   animation: fadeIn 1.5s ease-out;
+}
+
+/* Media Queries para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  #home {
+    padding: 2rem 1rem; /* Reducir el padding para móviles */
+    height: auto; /* Altura automática para evitar desbordamiento */
+    overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+  }
+
+  .profile-photo {
+    width: 25vh; /* Reducir el tamaño de la foto */
+    height: 35vh;
+    left: 0; /* Centrar la foto */
+    top: 0;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 90vw; /* Ajustar el ancho del texto */
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+    left: 0; /* Centrar el texto */
+    top: 0;
+    margin-top: 1rem; /* Ajustar margen superior */
+  }
+
+  #home h1 {
+    font-size: 1.8rem; /* Reducir el tamaño del título */
+  }
+
+  #home p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+  }
+}
+
+/* Media Queries para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  #home {
+    padding: 2rem 1rem; /* Reducir el padding para móviles */
+    height: auto; /* Altura automática para evitar desbordamiento */
+    overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+  }
+
+  .profile-photo {
+    width: 25vh; /* Reducir el tamaño de la foto */
+    height: 35vh;
+    left: 0; /* Centrar la foto */
+    top: 0;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 55vw; /* Ajustar el ancho del texto */
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente */
+    margin-top: 1rem; /* Ajustar margen superior */
+    translate: 85px -250px;
+  }
+
+
+  #home h1 {
+    font-size: 1.8rem; /* Reducir el tamaño del título */
+  }
+
+  #home p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+    position: static; /* Eliminar posición relativa */
+  }
+}
+
+/* Media Queries para tablets (pantallas de 600px a 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  #home {
+    padding: 3rem 1.5rem; /* Ajustar el padding para tablets */
+    height: auto; /* Altura automática para evitar desbordamiento */
+    overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+  }
+
+  .profile-photo {
+    width: 30vh; /* Ajustar el tamaño de la foto */
+    height: 40vh;
+    left: 0; /* Centrar la foto */
+    top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    max-width: 80vw; /* Ajustar el ancho del texto */
+    font-size: 1.1rem; /* Ajustar el tamaño de la fuente */
+    left: 0; /* Centrar el texto */
+    top: 0;
+    margin-top: 1.5rem; /* Ajustar margen superior */
+    position: static; /* Eliminar posición relativa */
+  }
+
+  #home h1 {
+    font-size: 2rem; /* Ajustar el tamaño del título */
+  }
+
+  #home p {
+    font-size: 1.1rem; /* Ajustar el tamaño del texto */
+    position: static; /* Eliminar posición relativa */
+  }
+}
+
+/* Media Queries para pantallas medianas (pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home {
+    padding: 4rem 2rem; /* Ajustar el padding para pantallas medianas */
+    height: auto; /* Altura automática para evitar desbordamiento */
+    overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+  }
+
+  .profile-photo {
+    width: 35vh; /* Ajustar el tamaño de la foto */
+    height: 45vh;
+    left: 0; /* Centrar la foto */
+    top: 0;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    max-width: 50vw; /* Ajustar el ancho del texto */
+    font-size: 1.1rem; /* Ajustar el tamaño de la fuente */
+    margin-top: 2rem; /* Ajustar margen superior */
+    translate: 80px -370px;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+    translate: 150px;
+}
+
+  #home h1 {
+    font-size: 2.2rem; /* Ajustar el tamaño del título */
+  }
+
+  #home p {
+    font-size: 1.1rem; /* Ajustar el tamaño del texto */
+    position: static; /* Eliminar posición relativa */
+  }
+}
+
+/* Media Queries para pantallas grandes (pantallas de 1024px en adelante) */
+@media (min-width: 1024px) {
+  #home {
+    padding: 6rem 2rem; /* Ajustar el padding para pantallas grandes */
+    height: calc(100vh - 60px); /* Altura fija para evitar desbordamiento */
+    overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+  }
+
+  .profile-photo {
+    width: 40vh; /* Ajustar el tamaño de la foto */
+    height: 55vh;
+    left: -2vw; /* Posición original */
+    top: 5vh;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    max-width: 60vw; /* Ajustar el ancho del texto */
+    left: 50px;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+    translate: 150px;
+}
+  #home h1 {
+    font-size: 2.5rem; /* Ajustar el tamaño del título */
+  }
+
+  #home p {
+    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    position: relative; /* Mantener posición relativa */
+  }
 }

@@ -5,8 +5,8 @@
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  height: auto; /* Permite que el contenedor crezca según el contenido */
-  overflow-y: auto; /* Habilita el scroll si es necesario */
+  height: 90vh; /* Altura fija para habilitar el scroll */
+  overflow-y: auto; /* Habilita el scroll vertical */
   overflow-x: hidden; /* Evita desbordamientos horizontales */
   display: flex;
   flex-direction: column;
@@ -20,11 +20,22 @@
   color: var(--secondary-color);
 }
 
+.skills-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-intro p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
 /* Estilos para cada categoría de habilidades */
 .skill-category {
   margin-bottom: 2rem;
   flex: 1; /* Permite que cada sección crezca según el contenido */
   min-height: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
 }
 
 .skill-category h3 {
@@ -36,7 +47,7 @@
   padding-bottom: 0.5rem;
   text-transform: uppercase;
   position: relative;
-  top: -80px; /* Sube el título */
+  top: -100px; /* Sube el título */
 }
 
 .skill-category ul {
@@ -46,7 +57,7 @@
   padding: 0.01rem;
   justify-content: center;
   position: relative;
-  top: -110px; /* Sube la lista de habilidades */
+  top: -130px; /* Sube la lista de habilidades */
 }
 
 .skill-category ul li {
@@ -67,4 +78,52 @@
 .skill-category ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  #skills {
+    height: 90vh; /* Aumenta la altura para móviles */
+  }
+
+  .skill-category ul li {
+    min-width: 100%; /* Ocupar todo el ancho en móviles */
+    max-width: 100%;
+  }
+}
+
+/* Media Queries para tablets (pantallas de 600px a 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  #skills {
+    height: 80vh; /* Altura fija para tablets */
+  }
+
+  .skill-category ul li {
+    min-width: 45%; /* Dos columnas en tablets */
+    max-width: 45%;
+  }
+}
+
+/* Media Queries para pantallas medianas (pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #skills {
+    height: 80vh; /* Altura fija para pantallas medianas */
+  }
+
+  .skill-category ul li {
+    min-width: 30%; /* Tres columnas en pantallas medianas */
+    max-width: 30%;
+  }
+}
+
+/* Media Queries para pantallas grandes (pantallas de 1024px en adelante) */
+@media (min-width: 1024px) {
+  #skills {
+    height: 80vh; /* Altura fija para pantallas grandes */
+  }
+
+  .skill-category ul li {
+    min-width: 400px; /* Tamaño fijo para pantallas grandes */
+    max-width: 800px;
+  }
 }

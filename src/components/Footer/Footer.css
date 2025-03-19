@@ -14,5 +14,13 @@ footer {
 footer p {
   margin: 0;
   font-size: 1rem;
-  top: 0vh;
+  top: 40vh;
+  translate: 250px -290px; 
+}
+
+@media (min-width: 1024px) {
+  footer p {
+      max-width: 60vw;
+      left: 90px;
+  }
 }

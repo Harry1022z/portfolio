@@ -18,6 +18,7 @@
   font-size: 1.2rem;
   color: #7f8c8d;
   margin-bottom: 1.5rem;
+  translate: -0vh -20px;
 }
 
 .progress-bar-container {
@@ -43,6 +44,7 @@
   font-size: 1rem;
   color: #7f8c8d;
   margin-top: 1rem;
+  left: 0px;
 }
 
 .level-details {
@@ -67,5 +69,5 @@
   font-size: 1rem;
   color: #7f8c8d;
   left: 0vh;
-  top: -30vh;
+  top: 3vh;
 }

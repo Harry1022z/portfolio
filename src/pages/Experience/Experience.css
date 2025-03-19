@@ -5,6 +5,8 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  height: 80vh; /* Altura del contenedor principal */
+  overflow-y: auto; /* Habilitar scroll vertical */
 }
 
 #experience h2 {
@@ -18,6 +20,7 @@
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .timeline::before {
@@ -31,15 +34,27 @@
   margin-left: -2px;
 }
 
+.job-container {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.job-container.left {
+  left: 0;
+}
+
+.job-container.right {
+  left: 50%;
+}
+
 .job {
   background: var(--background-color);
   padding: 1.5rem;
   border-radius: 10px;
-  margin-bottom: 1.5rem;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  width: 45%;
 }
 
 .job:hover {
@@ -53,23 +68,30 @@
   gap: 0.5rem;
   font-size: 1.5rem;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
+  transform: translate(0px, 1rem);
 }
 
-.job p {
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.job-info span {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
   color: #7f8c8d;
-  margin-bottom: 1rem;
 }
 
-.job ul {
+.responsibilities {
   margin-left: 1.5rem;
 }
 
-.job ul li {
+.responsibilities li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -78,7 +100,7 @@
   margin-bottom: 0.5rem;
 }
 
-.job ul li::before {
+.responsibilities li::before {
   content: '';
   width: 8px;
   height: 8px;
@@ -87,30 +109,22 @@
   margin-right: 0.5rem;
 }
 
-.job ul li:hover {
+.responsibilities li:hover {
   color: var(--primary-color);
   transition: color 0.3s ease;
 }
 
-.job ul li:hover::before {
+.responsibilities li:hover::before {
   background: var(--secondary-color);
   transition: background 0.3s ease;
 }
 
-.job.left {
-  left: 0;
-}
-
-.job.right {
-  left: 55%;
-}
-
-.job::after {
+.job-container.left::after,
+.job-container.right::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 20px;
-  right: -10px;
   background-color: var(--background-color);
   border: 4px solid var(--primary-color);
   top: 20px;
@@ -118,21 +132,10 @@
   z-index: 1;
 }
 
-.job.right::after {
-  left: -10px;
+.job-container.left::after {
+  right: -10px;
 }
 
-@media (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
-  }
-
-  .job {
-    width: 100%;
-    left: 0 !important;
-  }
-
-  .job::after {
-    left: 10px !important;
-  }
+.job-container.right::after {
+  left: -10px;
 }

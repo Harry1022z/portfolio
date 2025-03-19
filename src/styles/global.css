@@ -28,18 +28,21 @@ ul {
   padding: 0;
 }
 
- h3 {
+h1, h2, h3 {
   color: var(--secondary-color);
+  position: relative;
+}
+
+h3 {
   translate: 0px -30px;
 }
 
 h1 {
-  color: var(--secondary-color);
-  translate: 21.5vh -40vh;
+ left: 500px;
+ top: -300px;
 }
 
 h2 {
-  color: var(--secondary-color);
   translate: 70vh -5px;
 }
 
@@ -63,4 +66,63 @@ section {
 
 .fade-in {
   animation: fadeIn 1s ease-out;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+  h1 {
+    translate: -30vh -10vh;
+    font-size: 2rem;
+  }
+  h2 {
+    translate: 50vh -5px;
+    font-size: 1.5rem;
+  }
+  h3 {
+    translate: 0px -20px;
+    font-size: 1.2rem;
+  }
+  section {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    translate: -39vh -6vh;
+    font-size: 1.8rem;
+  }
+  h2 {
+    translate: 30vh 0;
+    font-size: 1.3rem;
+  }
+  h3 {
+    translate: 0px -10px;
+    font-size: 1.1rem;
+  }
+  section {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    translate: -66vh 10vh;
+    font-size: 1rem;
+    text-align: center;
+  }
+  h2 {
+    translate: 10vh 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h3 {
+    translate: 0px 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  section {
+    max-width: 100%;
+    padding: 10px;
+  }
 }

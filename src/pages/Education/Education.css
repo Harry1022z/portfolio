@@ -3,6 +3,8 @@
   border-radius: 10px;
   box-shadow: var(--shadow);
   padding: 2rem;
+  max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+  margin: 0 auto; /* Centrar el contenedor */
 }
 
 #education h2 {
@@ -14,7 +16,7 @@
 
 .education-item {
   background: var(--background-color);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow);
@@ -29,10 +31,106 @@
 .education-item h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem; /* Más espacio debajo del título */
+  translate: 0px;
 }
 
-.education-item p {
-  font-size: 1rem;
-  color: #7f8c8d;
+.education-details {
+  margin-left: 1rem; /* Sangría para alinear con el título */
+}
+
+.education-details p {
+  margin-bottom: 0.5rem; /* Espaciado entre párrafos */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre iconos y texto (si los agregas) */
+  top: 41vh;
+  left: -35vh;
+}
+
+.education-details strong {
+  color: var(--primary-color);
+  min-width: 150px; /* Ancho fijo para alinear los textos */
+  display: inline-block;
+}
+
+/* Media Queries */
+
+/* Dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+  #education {
+    padding: 1rem; /* Reducir el padding */
+  }
+
+  #education h2 {
+    font-size: 1.5rem; /* Reducir el tamaño de fuente */
+  }
+
+  .education-item h3 {
+    font-size: 1.25rem; /* Reducir el tamaño de fuente */
+  }
+
+  .education-details p {
+    font-size: 0.9rem; /* Reducir el tamaño de fuente */
+    translate: -40px 360px;
+  }
+}
+
+/* Dispositivos de tamaño medio (tabletas) */
+@media (min-width: 481px) and (max-width: 768px) {
+  #education {
+    padding: 1.5rem; /* Ajustar el padding */
+  }
+
+  #education h2 {
+    font-size: 1.75rem; /* Ajustar el tamaño de fuente */
+  }
+
+  .education-item h3 {
+    font-size: 1.4rem; /* Ajustar el tamaño de fuente */
+  }
+
+  .education-details p {
+    font-size: 0.95rem; /* Ajustar el tamaño de fuente */
+    translate: -100px 240px;
+  }
+}
+
+/* Dispositivos grandes (pantallas de escritorio) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  #education {
+    padding: 2rem; /* Mantener el padding */
+  }
+
+  #education h2 {
+    font-size: 2rem; /* Mantener el tamaño de fuente */
+  }
+
+  .education-item h3 {
+    font-size: 1.5rem; /* Mantener el tamaño de fuente */
+  }
+
+  .education-details p {
+    font-size: 1rem; /* Mantener el tamaño de fuente */
+    translate: -100px 230px;
+  }
+}
+
+/* Pantallas muy grandes (pantallas de escritorio grandes) */
+@media (min-width: 1201px) {
+  #education {
+    max-width: 1000px; /* Aumentar el ancho máximo */
+  }
+
+  #education h2 {
+    font-size: 2.5rem; /* Aumentar el tamaño de fuente */
+  }
+
+  .education-item h3 {
+    font-size: 1.75rem; /* Aumentar el tamaño de fuente */
+  }
+
+  .education-details p {
+    font-size: 1.1rem; /* Aumentar el tamaño de fuente */
+  }
 }
