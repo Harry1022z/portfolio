@@ -66,3 +66,109 @@
   top: 40vh;
   left: -20vh;
 }
+
+/* Media Queries para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  .social-skills-container {
+    padding: 1.5rem; /* Reducir el padding para móviles */
+  }
+
+  .social-skills-container h2 {
+    font-size: 1.8rem; /* Reducir el tamaño del título */
+  }
+
+  .social-skill-item {
+    width: 100%; /* Ocupar todo el ancho en móviles */
+    max-width: none; /* Eliminar el ancho máximo */
+    padding: 1rem; /* Reducir el padding */
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  }
+
+  .skill-name {
+    font-size: 1rem; /* Reducir el tamaño del nombre de la habilidad */
+  }
+
+  .skill-description {
+    font-size: 0.8rem; /* Reducir el tamaño de la descripción */
+  }
+}
+
+/* Media Queries para tablets (pantallas de 600px a 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .social-skills-container {
+    padding: 1.5rem; /* Ajustar el padding para tablets */
+  }
+
+  .social-skills-container h2 {
+    font-size: 1.9rem; /* Ajustar el tamaño del título */
+  }
+
+  .social-skill-item {
+    width: 48%; /* Dos columnas en tablets */
+    max-width: none; /* Eliminar el ancho máximo */
+    padding: 1.2rem; /* Ajustar el padding */
+    font-size: 0.95rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .skill-name {
+    font-size: 1.05rem; /* Ajustar el tamaño del nombre de la habilidad */
+  }
+
+  .skill-description {
+    font-size: 0.85rem;
+    translate: 0vh -1vh;
+  }
+}
+
+/* Media Queries para pantallas medianas (pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social-skills-container {
+    padding: 2rem; /* Ajustar el padding para pantallas medianas */
+  }
+
+  .social-skills-container h2 {
+    font-size: 2rem; /* Ajustar el tamaño del título */
+  }
+
+  .social-skill-item {
+    width: 48%; /* Dos columnas en pantallas medianas */
+    max-width: none; /* Eliminar el ancho máximo */
+    padding: 1.5rem; /* Ajustar el padding */
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .skill-name {
+    font-size: 1.1rem; /* Ajustar el tamaño del nombre de la habilidad */
+  }
+
+  .skill-description {
+    font-size: 0.9rem; /* Ajustar el tamaño de la descripción */
+  }
+}
+
+/* Media Queries para pantallas grandes (pantallas de 1024px en adelante) */
+@media (min-width: 1024px) {
+  .social-skills-container {
+    padding: 2rem; /* Ajustar el padding para pantallas grandes */
+  }
+
+  .social-skills-container h2 {
+    font-size: 2.2rem; /* Ajustar el tamaño del título */
+  }
+
+  .social-skill-item {
+    width: 48%; /* Dos columnas en pantallas grandes */
+    max-width: 300px; /* Restaurar el ancho máximo */
+    padding: 1.5rem; /* Ajustar el padding */
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .skill-name {
+    font-size: 1.1rem; /* Ajustar el tamaño del nombre de la habilidad */
+  }
+
+  .skill-description {
+    font-size: 0.9rem;
+    translate: 20vh -41vh;
+  }
+}

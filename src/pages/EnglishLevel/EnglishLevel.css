@@ -22,7 +22,6 @@
 }
 
 .progress-bar-container {
-
   background: #ecf0f1;
   border-radius: 10px;
   height: 20px;
@@ -51,7 +50,6 @@
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
-  
 }
 
 .level-detail {
@@ -70,4 +68,149 @@
   color: #7f8c8d;
   left: 0vh;
   top: 3vh;
+}
+
+/* Media Queries para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  #english-level {
+    padding: 1rem; /* Reducir el padding para móviles */
+  }
+
+  #english-level h2 {
+    font-size: 1.8rem; /* Reducir el tamaño del título */
+  }
+
+  #english-level p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .progress-bar-container {
+    width: 100%; /* Ocupar todo el ancho en móviles */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-description {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  }
+
+  .level-details {
+    flex-direction: column; /* Cambiar a una columna en móviles */
+    gap: 1rem; /* Espacio entre elementos */
+  }
+
+  .level-detail h3 {
+    font-size: 1.3rem; /* Reducir el tamaño del título */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-detail p {
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+}
+
+/* Media Queries para tablets (pantallas de 600px a 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  #english-level {
+    padding: 1.5rem; /* Ajustar el padding para tablets */
+  }
+
+  #english-level h2 {
+    font-size: 1.9rem; /* Ajustar el tamaño del título */
+  }
+
+  #english-level p {
+    font-size: 1.1rem; /* Ajustar el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .progress-bar-container {
+    width: 95%; /* Ajustar el ancho del contenedor */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-description {
+    font-size: 0.95rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .level-detail h3 {
+    font-size: 1.4rem; /* Ajustar el tamaño del título */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-detail p {
+    font-size: 0.95rem; /* Ajustar el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+}
+
+/* Media Queries para pantallas medianas (pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #english-level {
+    padding: 2rem; /* Ajustar el padding para pantallas medianas */
+  }
+
+  #english-level h2 {
+    font-size: 2rem; /* Ajustar el tamaño del título */
+  }
+
+  #english-level p {
+    font-size: 0.9rem;
+    translate: 0px -20px; /* Eliminar transformación */
+  }
+
+  .progress-bar-container {
+    width: 90%; /* Ajustar el ancho del contenedor */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-description {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .level-detail h3 {
+    font-size: 1.5rem; /* Ajustar el tamaño del título */
+    translate: 0px -1vh; /* Eliminar transformación */
+  }
+
+  .level-detail p {
+    font-size: 1rem; /* Ajustar el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+}
+
+/* Media Queries para pantallas grandes (pantallas de 1024px en adelante) */
+@media (min-width: 1024px) {
+  #english-level {
+    padding: 2rem; /* Ajustar el padding para pantallas grandes */
+  }
+
+  #english-level h2 {
+    font-size: 2.2rem; /* Ajustar el tamaño del título */
+  }
+
+  #english-level p {
+    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .progress-bar-container {
+    width: 90%; /* Ajustar el ancho del contenedor */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-description {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .level-detail h3 {
+    font-size: 1.5rem; /* Ajustar el tamaño del título */
+    translate: 0; /* Eliminar transformación */
+  }
+
+  .level-detail p {
+    font-size: 1rem; /* Ajustar el tamaño del texto */
+    translate: 0; /* Eliminar transformación */
+  }
 }

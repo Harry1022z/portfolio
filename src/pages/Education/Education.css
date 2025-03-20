@@ -67,7 +67,7 @@
   }
 
   .education-item h3 {
-    font-size: 1.25rem; /* Reducir el tamaño de fuente */
+    font-size: 1.25rem;
   }
 
   .education-details p {
@@ -88,12 +88,20 @@
 
   .education-item h3 {
     font-size: 1.4rem; /* Ajustar el tamaño de fuente */
+    translate: 25px;
   }
 
   .education-details p {
     font-size: 0.95rem; /* Ajustar el tamaño de fuente */
-    translate: -100px 240px;
+    translate: -150px 0px;
   }
+  .education-item {
+    background: var(--background-color);
+    padding: 0.1vh;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
 }
 
 /* Dispositivos grandes (pantallas de escritorio) */
